@@ -8,20 +8,12 @@ terraform {
   }
 }
 
-provider "digitalocean" {
-  token = var.do_token
-}
-
 resource "digitalocean_droplet" "vm_aula" {
   image    = "ubuntu-22-04-x64"
   name     = var.droplet_name
   region   = var.droplet_region
   size     = var.droplet_size
   ssh_keys = [data.digitalocean_ssh_key.ssh_key.id]
-}
-
-data "digitalocean_ssh_key" "ssh_key" {
-  name = var.ssh_key_name
 }
 
 resource "digitalocean_firewall" "firewall_aula" {
@@ -51,27 +43,4 @@ resource "digitalocean_firewall" "firewall_aula" {
     protocol         = "icmp"
     source_addresses = ["0.0.0.0/0", "::/0"]
   }
-}
-
-variable "droplet_name" {
-  default = "vm-aula"
-}
-
-variable "droplet_region" {
-  default = "nyc1"
-}
-
-variable "droplet_size" {
-  default = "s-1vcpu-512mb-10gb"
-}
-
-variable "ssh_key_name" {
-  default = "WSL Terraform"
-}
-
-variable "do_token" {
-}
-
-output "droplet_ip" {
-  value = digitalocean_droplet.vm_aula.ipv4_address
 }
