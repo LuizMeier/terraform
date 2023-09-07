@@ -10,16 +10,36 @@ terraform {
 
 resource "digitalocean_droplet" "vm_aula" {
   image    = "ubuntu-22-04-x64"
-  name     = var.droplet_name
+  name     = "${var.droplet_name}-${count.index}"
   region   = var.droplet_region
   size     = var.droplet_size
   ssh_keys = [data.digitalocean_ssh_key.ssh_key.id]
+  count    = var.vms_count
+
+  connection {
+    type        = "ssh"
+    user        = "root"
+    private_key = file(var.ssh_private_key)
+    host        = digitalocean_droplet.vm_aula[0].ipv4_address
+  }
+
+  provisioner "file" {
+    source      = "arquivo-instalacao.sh"
+    destination = "/root/arquivo-instalacao.sh"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "chmod +x /root/arquivo-instalacao.sh",
+      "/root/arquivo-instalacao.sh"
+    ]
+  }
 }
 
 resource "digitalocean_firewall" "firewall_aula" {
   name = "only-22-80-and-443"
 
-  droplet_ids = [digitalocean_droplet.vm_aula.id]
+  droplet_ids = digitalocean_droplet.vm_aula[*].id
 
   inbound_rule {
     protocol         = "tcp"

@@ -1,5 +1,6 @@
-droplet_name = "este123"
+droplet_name = "vm-aula"
 #droplet_size
 #droplet_region
 #do_token=""
-#ssh_key_name
+#ssh_private_key_name
+vms_count = 1
