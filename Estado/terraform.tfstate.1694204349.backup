@@ -1,0 +1,170 @@
+{
+  "version": 4,
+  "terraform_version": "1.5.6",
+  "serial": 36,
+  "lineage": "607202ea-dc44-03e2-e325-cbac6e031d51",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "local_file",
+      "name": "arquivo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "content": "civil-gnat",
+            "content_base64": null,
+            "content_base64sha256": "CjLu6ufrcFEauKcEEIHabaGiW0r2RR2359FB9H7crOM=",
+            "content_base64sha512": "rEMkj6fWatB8whLoNyD+2fvYFy0ky3Ri2tUG1yK8aY82gbs77Aqyqyou4/JazK7wyWfRVBQ/Y+AKwFrcTjufVQ==",
+            "content_md5": "23a0c35c02dbd9abd0a40c5b44d781e1",
+            "content_sha1": "619161b9163c1f5ad70671c8afc693af8e88705b",
+            "content_sha256": "0a32eeeae7eb70511ab8a7041081da6da1a25b4af6451db7e7d141f47edcace3",
+            "content_sha512": "ac43248fa7d66ad07cc212e83720fed9fbd8172d24cb7462dad506d722bc698f3681bb3bec0ab2ab2a2ee3f25accaef0c967d154143f63e00ac05adc4e3b9f55",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "0-aaarquivo.txt",
+            "id": "619161b9163c1f5ad70671c8afc693af8e88705b",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "content": "usable-krill",
+            "content_base64": null,
+            "content_base64sha256": "TXSpX1UTad8rWhVmAZ3LOwVf1K5UaT3Y3BIRy3CVmRE=",
+            "content_base64sha512": "/CiINmKFNJYL3B4DAPF4y6bD15Y7ppWYHDVjQ6pZkBLuulnwim1k6njfeG/bWULueDB4k1KpaPjBGATaL6DWBQ==",
+            "content_md5": "67cb4abbbf89c4e81255c44807c5f57b",
+            "content_sha1": "a99bd3062a69057e4c3dc0bb6b421f41d5d51fc8",
+            "content_sha256": "4d74a95f551369df2b5a1566019dcb3b055fd4ae54693dd8dc1211cb70959911",
+            "content_sha512": "fc288836628534960bdc1e0300f178cba6c3d7963ba695981c356343aa599012eeba59f08a6d64ea78df786fdb5942ee7830789352a968f8c11804da2fa0d605",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "1-aaarquivo.txt",
+            "id": "a99bd3062a69057e4c3dc0bb6b421f41d5d51fc8",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "content": "master-dingo",
+            "content_base64": null,
+            "content_base64sha256": "G12rD7IPXF8OWtBYzT2FZe7SDCUVpFyABLkrvq2i4gc=",
+            "content_base64sha512": "x08XDSWkGnhYmzkUhWKK5n58mPL8bV/rdB40wy3TFHJ7E6njdIvnGTc4I2II8gpR6AWEnVgkHoSMdyh2rUYyJQ==",
+            "content_md5": "5af70da224961f91105ba28662c5069a",
+            "content_sha1": "dfe5b89ccbe9516c0dcc4c704cff926edbb9cd9d",
+            "content_sha256": "1b5dab0fb20f5c5f0e5ad058cd3d8565eed20c2515a45c8004b92bbeada2e207",
+            "content_sha512": "c74f170d25a41a78589b391485628ae67e7c98f2fc6d5feb741e34c32dd314727b13a9e3748be7193738236208f20a51e805849d58241e848c772876ad463225",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "2-aaarquivo.txt",
+            "id": "dfe5b89ccbe9516c0dcc4c704cff926edbb9cd9d",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "content": "sterling-moose",
+            "content_base64": null,
+            "content_base64sha256": "KF4AlJehq+yADtNvJRR8+RyEiLuBnJc8itWSnyXz4lc=",
+            "content_base64sha512": "A7o51Xx7Gi2EUSoy0jtpka7WLxxHb6mDCcGtCQ7BiSrWKxwjalEkGUWMxgTT4e2yerJh2ZKNwpZPIDuJi1j76g==",
+            "content_md5": "79b6781cf65469983671774da948d763",
+            "content_sha1": "4b7d5e7f005f4403d1f3ade4559f3b09c4dd6226",
+            "content_sha256": "285e009497a1abec800ed36f25147cf91c8488bb819c973c8ad5929f25f3e257",
+            "content_sha512": "03ba39d57c7b1a2d84512a32d23b6991aed62f1c476fa98309c1ad090ec1892ad62b1c236a512419458cc604d3e1edb27ab261d9928dc2964f203b898b58fbea",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "3-aaarquivo.txt",
+            "id": "4b7d5e7f005f4403d1f3ade4559f3b09c4dd6226",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "random_pet",
+      "name": "pets",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "id": "civil-gnat",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "id": "usable-krill",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "id": "master-dingo",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "id": "sterling-moose",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

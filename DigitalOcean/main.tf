@@ -70,3 +70,4 @@ resource "digitalocean_firewall" "firewall_aula" {
     source_addresses = ["0.0.0.0/0", "::/0"]
   }
 }
+

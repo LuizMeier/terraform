@@ -1,0 +1,170 @@
+{
+  "version": 4,
+  "terraform_version": "1.5.6",
+  "serial": 104,
+  "lineage": "607202ea-dc44-03e2-e325-cbac6e031d51",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "local_file",
+      "name": "arquivo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "content": "choice-jackass",
+            "content_base64": null,
+            "content_base64sha256": "Vfhsv9ULUvyd8rK5oMdUtLEC1F5tt+eFk10kFbWja/E=",
+            "content_base64sha512": "9YqSWI3wYLzSfWdTXA3nZGF74/UKs61dthijOqLCINCR2NB8B1ge03qyL4IEgJvwM2XUqJl5hyYRVn2BM4AROA==",
+            "content_md5": "595ca9b0056ba7dbf771b77e66d12dfa",
+            "content_sha1": "02b0caf189d0d445bed9e6f24030405df178df7d",
+            "content_sha256": "55f86cbfd50b52fc9df2b2b9a0c754b4b102d45e6db7e785935d2415b5a36bf1",
+            "content_sha512": "f58a92588df060bcd27d67535c0de764617be3f50ab3ad5db618a33aa2c220d091d8d07c07581ed37ab22f8204809bf03365d4a89979872611567d8133801138",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "0-arquivo.txt",
+            "id": "02b0caf189d0d445bed9e6f24030405df178df7d",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "content": "maximum-osprey",
+            "content_base64": null,
+            "content_base64sha256": "6xOufyl+VoVsJPKFwFKQhZr3UhbCRUAMQHjuE/BQPvU=",
+            "content_base64sha512": "kENbCZdpyDtsdFGHZytCOd4E4avDi0Jc0fcbkS2cCgX5XzDZCZH/aerdmAaZY7SMkWR620ovQN3yqj0RVMWwQA==",
+            "content_md5": "9bb77b6ae2a7198b36e622fbe25ab779",
+            "content_sha1": "ffb62851be22d5ab8d407c4921a46fab2afdb062",
+            "content_sha256": "eb13ae7f297e56856c24f285c05290859af75216c245400c4078ee13f0503ef5",
+            "content_sha512": "90435b099769c83b6c745187672b4239de04e1abc38b425cd1f71b912d9c0a05f95f30d90991ff69eadd98069963b48c91647adb4a2f40ddf2aa3d1154c5b040",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "1-arquivo.txt",
+            "id": "ffb62851be22d5ab8d407c4921a46fab2afdb062",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "content": "careful-camel",
+            "content_base64": null,
+            "content_base64sha256": "3s3/wMDRBU9rP/HrEgoxpKFwzok2M15qJb65PcbiQc0=",
+            "content_base64sha512": "zsCRUQXfttlxnZBJ5cBD6J3UALFWZFhUQ9COX4JDILETAg98v9wKqPmFJMmOLPilHXFlVI+v4mu6n2ZmBQxhzQ==",
+            "content_md5": "b46d9aa1e1ece39f4007098b6f35c387",
+            "content_sha1": "a085caf047d760fe5adf39d4d70c897e2f263877",
+            "content_sha256": "decdffc0c0d1054f6b3ff1eb120a31a4a170ce8936335e6a25beb93dc6e241cd",
+            "content_sha512": "cec0915105dfb6d9719d9049e5c043e89dd400b15664585443d08e5f824320b113020f7cbfdc0aa8f98524c98e2cf8a51d7165548fafe26bba9f6666050c61cd",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "2-arquivo.txt",
+            "id": "a085caf047d760fe5adf39d4d70c897e2f263877",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "content": "delicate-flamingo",
+            "content_base64": null,
+            "content_base64sha256": "N0CEEhqvg8g17PmKMCfV1JhCIeDeoaBzGpOeLhwR0x0=",
+            "content_base64sha512": "vBlP2vdhRa1BpPPMg+OHb6w9o8i/qDEFfxbcwe72wSn4z4ucb+PZzYvlqN2gi6WuD8xG7Ddq2XAb+UJm8mkR6A==",
+            "content_md5": "672082637b875d7ef02c511df9df1faa",
+            "content_sha1": "49ef98c6941c9a097935f02bb35015df9df00687",
+            "content_sha256": "374084121aaf83c835ecf98a3027d5d4984221e0dea1a0731a939e2e1c11d31d",
+            "content_sha512": "bc194fdaf76145ad41a4f3cc83e3876fac3da3c8bfa831057f16dcc1eef6c129f8cf8b9c6fe3d9cd8be5a8dda08ba5ae0fcc46ec376ad9701bf94266f26911e8",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "3-arquivo.txt",
+            "id": "49ef98c6941c9a097935f02bb35015df9df00687",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "random_pet.pets"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "random_pet",
+      "name": "pets",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "id": "choice-jackass",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "id": "maximum-osprey",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "id": "careful-camel",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "id": "delicate-flamingo",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
