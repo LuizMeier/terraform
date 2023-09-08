@@ -13,7 +13,7 @@ resource "digitalocean_droplet" "vm_aula" {
   name     = "${var.droplet_name}-${count.index}"
   region   = var.droplet_region
   size     = var.droplet_size
-  ssh_keys = [data.digitalocean_ssh_key.ssh_key.id]
+  ssh_keys = [digitalocean_ssh_key.ssh_key.id]
   count    = var.vms_count
 
   connection {
@@ -34,6 +34,12 @@ resource "digitalocean_droplet" "vm_aula" {
       "/root/arquivo-instalacao.sh"
     ]
   }
+}
+
+# Create a new SSH key
+resource "digitalocean_ssh_key" "ssh_key" {
+  name       = "WSL Terraform"
+  public_key = file("~/.ssh/terraform.pub")
 }
 
 resource "digitalocean_firewall" "firewall_aula" {
