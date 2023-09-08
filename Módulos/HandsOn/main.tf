@@ -12,7 +12,7 @@ provider "digitalocean" {
 }
 
 module "do-wp_stack" {
-  source      = "./modules/do-wp-stack"
+  source      = "LuizMeier/wp_do/digitalocean"
   region      = var.region
   wp_vm_count = var.wp_vm_count
   vms_ssh     = digitalocean_ssh_key.ssh.fingerprint
