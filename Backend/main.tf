@@ -1,7 +1,6 @@
 terraform {
-  backend "pg" {
-    conn_str = "postgres://$DBUSER:$DB_PWD@localhost:5432/$DATABASE"
-  }
+  backend "kubernetes" {
+    }
 }
 
 resource "local_file" "arquivo_local" {
