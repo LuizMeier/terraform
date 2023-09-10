@@ -23,8 +23,15 @@ resource "digitalocean_droplet" "web" {
   size   = "s-1vcpu-1gb"
 
   lifecycle {
-    ignore_changes = [ 
-        tag,
+    replace_triggered_by = [
+        digitalocean_droplet.jenkins
      ]
   }
+}
+
+resource "digitalocean_droplet" "jenkins" {
+  image  = "ubuntu-22-04-x64"
+  name   = "vm-jenkins"
+  region = "nyc1"
+  size   = "s-1vcpu-1gb"
 }
