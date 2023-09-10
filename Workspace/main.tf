@@ -36,9 +36,9 @@ resource "digitalocean_kubernetes_cluster" "k8s" {
     size       = var.k8s_node_size
     node_count = var.k8s_node_count
   }
-#  lifecycle {
-#    prevent_destroy = true
-#  }
+  #  lifecycle {
+  #    prevent_destroy = true
+  #  }
 }
 
 variable "do_token" {
