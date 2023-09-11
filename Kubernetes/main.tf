@@ -46,7 +46,7 @@ resource "kubernetes_deployment" "web_page" {
   }
 }
 
-resource "kubernetes_service" "web_page_service" {
+resource "kubernetes_service" "web-page-service" {
   metadata {
     name = "webpage"
   }
@@ -59,6 +59,42 @@ resource "kubernetes_service" "web_page_service" {
       target_port = 80
     }
 
-    type = "LoadBalancer"
+    type = "ClusterIP"
+  }
+}
+
+resource "kubernetes_ingress_v1" "webpage-ingress" {
+  metadata {
+    name = "webpage"
+  }
+
+  spec {
+    ingress_class_name = "nginx"
+    default_backend {
+      service {
+        name = "web-page-service"
+        port {
+          number = 80
+        }
+      }
+    }
+
+    rule {
+      host = "web.1.2.3.4.nip.io"
+      http {
+        path {
+          backend {
+            service {
+              name = "web_page_service"
+              port {
+                number = 8080
+              }
+            }
+          }
+
+          path = "/app1/*"
+        }
+      }
+    }
   }
 }
